@@ -27,7 +27,7 @@ function start(){
         break;
         case "Create New Department": createNewDept();
         break;
-        case "End Session": console.log('Bye!');
+        case "End Session": console.log('Come again soon!');
       }
     });
   }
@@ -38,11 +38,12 @@ function start(){
     connection.query('SELECT * FROM Departments', function(err, res){
       if(err) throw err;
       console.log('>>>>>>Product Sales by Department<<<<<<');
-      console.log('----------------------------------------------------------------------------------------------------')
-  
+      console.log('___________________________________________________________________________________________________'.magenta)
+      console.log(' ')
       for(var i = 0; i<res.length;i++){
         console.log("Department ID: " + res[i].DepartmentID + " | " + "Department Name: " + res[i].DepartmentName + " | " + "Over Head Cost: " + (res[i].OverHeadCosts).toFixed(2) + " | " + "Product Sales: " + (res[i].TotalSales).toFixed(2) + " | " + "Total Profit: " + (res[i].TotalSales - res[i].OverHeadCosts).toFixed(2));
-        console.log('--------------------------------------------------------------------------------------------------')
+        console.log('___________________________________________________________________________________________________'.magenta)
+        console.log(' ')
       }
       start();
     })
