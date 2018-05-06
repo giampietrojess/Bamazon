@@ -24,7 +24,10 @@ To View this App on your own computer, first do the following:
 ## What Each Command Does
 
 1. `BamazonCustomer`
-This displays all available inventory in the store, followed by options allowed a customer to select a product and the quantity they'd like to order. The application then displays a summary of their purchase, the total cost, and the estimated delivery time.
+This displays all available inventory in the store, followed by options allowed a customer to select a product and the quantity they'd like to order. The application then displays a summary of their purchase, the total cost, and the estimated delivery time. If the user attempts to order more quantity than available in stock, it will display a notice refusing the transaction.
+
+Sample GIF: https://drive.google.com/file/d/1yi7LanINKXlzyJtcFZtMAAkjVir-71o9/view
+Sample GIF 2: https://drive.google.com/file/d/1omVEXMeS5xEIPHVBiYbu5XpltbQSlcPP/view
 
 2. `BamazonManager`
 This displays a menu for manager use, with the following options: 
@@ -41,6 +44,8 @@ This displays a menu for manager use, with the following options:
   * End Session
     * Terminates the session
 
+Sample GIF: https://drive.google.com/file/d/1WWeW9ySogfpvr4S-tN_Lw8h60avvLA0A/view
+
 3. `BamazonSupervisor`
 
   * View Product Sales by Department
@@ -52,6 +57,7 @@ This displays a menu for manager use, with the following options:
   * End Session
     * Terminates the session
 
+Sample GIF: https://drive.google.com/file/d/1ZETDwS4oprJyewM8n9aKmjxJrfRlBUDr/view
 
 ## Node Packages Used
 - Node.js
